@@ -3,3 +3,4 @@ openai-whisper
 numpy
 torch
 psycopg2-binary
+python-dotenv

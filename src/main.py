@@ -14,7 +14,7 @@ def lambda_handler(event, _context):
 
         try:
             print(f"Processando: {key}")
-            texto_transcrito = service.process_audio(bucket, key)
+            texto_transcrito = service.process_s3_audio(bucket, key)
             repo.save(key, texto_transcrito)
             print(f"Sucesso: {key}")
 

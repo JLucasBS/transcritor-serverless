@@ -4,13 +4,13 @@ Este projeto é uma função **AWS Lambda** containerizada que transcreve automa
 
 ## 🚀 Arquitetura
 
-1.  **Upload:** Arquivo `.mp3` é enviado para o Bucket S3.
-2.  **Trigger:** Evento S3 aciona a Lambda.
-3.  **Processamento:**
-    -   Download do áudio para `/tmp`.
-    -   Transcrição via `openai-whisper`.
-    -   Salvamento do texto no PostgreSQL.
-4.  **Clean Up:** Remoção do arquivo temporário.
+1. **Upload:** Arquivo `.mp3` é enviado para o Bucket S3.
+2. **Trigger:** Evento S3 aciona a Lambda.
+3. **Processamento:**
+    - Download do áudio para `/tmp`.
+    - Transcrição via `openai-whisper`.
+    - Salvamento do texto no PostgreSQL.
+4. **Clean Up:** Remoção do arquivo temporário.
 
 ## 🛠️ Tecnologias
 
@@ -29,7 +29,6 @@ Este projeto é uma função **AWS Lambda** containerizada que transcreve automa
 -   Docker e Docker Compose instalados.
 -   Python 3.10+ instalado.
 -   **FFmpeg** instalado no sistema (necessário para o Whisper rodar localmente).
-    -   _Ubuntu:_ `sudo apt install ffmpeg`
     -   _Windows:_ Instalar via Chocolatey ou baixar o executável e adicionar ao PATH.
 
 ### 1. Instalar Dependências
@@ -64,7 +63,7 @@ export AWS_PROFILE=default  # Ou suas chaves AWS_ACCESS_KEY_ID...
 
 #### Windows (PowerShell)
 
-```
+```bash
 $env:DB_HOST="localhost"
 $env:DB_NAME="db_transcricao"
 $env:DB_USER="user_teste"

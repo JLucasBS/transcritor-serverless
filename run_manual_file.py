@@ -11,7 +11,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 from src.service import AudioService
 from src.database import TranscriptionRepository
 
-ARQUIVO_LOCAL = r"C:\Users\jluca\Minhas Gravacoes\gravacao_1763063426205_chunk4.wav"
+ARQUIVO_LOCAL = r"./sample.mp3"
 
 if __name__ == "__main__":
     print(f"--- Iniciando Teste Manual com arquivo: {ARQUIVO_LOCAL} ---")

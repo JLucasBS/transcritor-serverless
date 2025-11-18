@@ -1,0 +1,5 @@
+boto3
+openai-whisper
+numpy
+torch
+psycopg2-binary
